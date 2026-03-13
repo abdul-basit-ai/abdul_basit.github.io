@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Abdul Basit - AI Researcher | Orange Innovation</title>
+    <title>Abdul Basit - AI Research Engineer | Orange Innovation</title>
     <meta name="description"
         content="Portfolio of Abdul Basit, AI Research Intern at Orange Innovation and Masters student at University of Paris-Saclay. Expert in LLMs, VLMs, and Computer Vision.">
     <meta name="keywords"
         content="Abdul Basit, AI Researcher, Machine Learning, Computer Vision, LLMs, Vision Language Models, Video Language understanding, Generative AI, Paris-Saclay, Orange Innovation, GNN">
     <meta name="author" content="Abdul Basit">
 
-    <meta property="og:title" content="Abdul Basit - AI Researcher">
+    <meta property="og:title" content="Abdul Basit - AI Research Engineer">
     <meta property="og:description"
         content="AI Researcher specializing in LLMs, VLMs, Computer Vision, and Generative AI. Currently at Orange Innovation and University of Paris-Saclay.">
     <meta property="og:type" content="website">
@@ -21,38 +21,34 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Animated Background -->
-    <div class="bg-animation">
-        <div class="gradient-orb orb-1"></div>
-        <div class="gradient-orb orb-2"></div>
-        <div class="gradient-orb orb-3"></div>
-    </div>
+    <!-- Subtle Background Pattern -->
+    <div class="bg-pattern"></div>
 
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scrollProgress"></div>
+    <!-- Progress Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
 
-    <!-- Navigation -->
-    <nav class="top-nav" id="mainNav">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">AB</a>
-            <div class="nav-links">
-                <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
-                <a href="#news"><i class="fas fa-newspaper"></i> News</a>
-                <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
-                <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
-                <a href="#projects"><i class="fas fa-code"></i> Projects</a>
-                <a href="#skills"><i class="fas fa-tools"></i> Skills</a>
-                <a href="#achievements"><i class="fas fa-trophy"></i> Achievements</a>
-                <a href="#recommendations"><i class="fas fa-star"></i> Recommendations</a>
+    <!-- Professional Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-wrapper">
+            <a href="#home" class="logo">Abdul Basit</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#news" class="nav-item">News</a>
+                <a href="#education" class="nav-item">Education</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#achievements" class="nav-item">Achievements</a>
+                <a href="#contact" class="nav-item">Contact</a>
             </div>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -60,35 +56,35 @@
         </div>
     </nav>
 
-    <main class="container">
+    <main class="main-container">
+        
         <!-- Hero Section -->
-        <header class="profile-section" id="home">
-            <div class="profile-card">
-                <div class="profile-image-wrapper">
-                    <img src="images/pro.jpg" alt="Abdul Basit" class="profile-pic"
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="images/pro.jpg" alt="Abdul Basit" class="profile-image"
                         onerror="this.src='https://via.placeholder.com/200'">
-                    <div class="status-indicator"></div>
+                    <div class="status-badge">Available for Opportunities</div>
                 </div>
 
-                <div class="profile-info">
-                    <h1 class="gradient-text">Abdul Basit</h1>
-                    <p class="subtitle">AI Research Engineer | LLMs & Computer Vision Specialist</p>
+                <div class="hero-text">
+                    <h1 class="hero-title">Abdul Basit</h1>
+                    <p class="hero-subtitle">AI Research Engineer | Machine Learning Specialist</p>
                     
-                    <div class="profile-description">
+                    <div class="hero-description">
                         <p>
-                            Currently an AI Research Intern at <strong class="highlight-orange">Orange Innovation</strong>,
-                            completing my Master's degree in Machine Vision and Artificial Intelligence at the <strong
-                                class="highlight-orange">University of Paris-Saclay</strong>. I specialize in <strong>LLMs, VLM,
-                                Video Language understanding, Computer Vision, Deep Learning, Fine-tuning, RAG, Graphs, and
-                                AI-agents</strong>.
+                            AI Research Intern at <span class="highlight">Orange Innovation</span>, pursuing a Master's degree 
+                            in Machine Vision and Artificial Intelligence at <span class="highlight">University of Paris-Saclay</span>. 
+                            Specializing in Large Language Models, Vision-Language Models, Computer Vision, and Deep Learning architectures.
                         </p>
-                        <div class="alert-box">
-                            <i class="fas fa-search"></i>
-                            <span>Looking for PhD opportunities and Research Internships</span>
-                        </div>
                     </div>
 
-                    <div class="contact-info">
+                    <div class="opportunity-notice">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Actively seeking PhD opportunities and Research Internships</span>
+                    </div>
+
+                    <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <span>Paris, France</span>
@@ -99,323 +95,460 @@
                         </div>
                     </div>
 
-                    <div class="social-links">
-                        <a href="https://github.com/abdul-basit-ai" target="_blank" class="social-btn github">
-                            <i class="fab fa-github"></i> GitHub
+                    <div class="social-bar">
+                        <a href="https://github.com/abdul-basit-ai" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/abdul-basit-742a32221/" target="_blank" class="social-btn linkedin">
-                            <i class="fab fa-linkedin"></i> LinkedIn
+                        <a href="https://www.linkedin.com/in/abdul-basit-742a32221/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
                         </a>
-                        <a href="https://x.com/basit_view?s=21" target="_blank" class="social-btn twitter">
-                            <i class="fab fa-x-twitter"></i> X
+                        <a href="https://x.com/basit_view?s=21" target="_blank" class="social-link" aria-label="X">
+                            <i class="fab fa-x-twitter"></i>
+                            <span>X (Twitter)</span>
                         </a>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
 
         <!-- News Section -->
-        <section id="news" class="section-animated">
+        <section class="content-section" id="news">
             <div class="section-header">
-                <h2><i class="fas fa-newspaper"></i> Latest News</h2>
-                <div class="section-line"></div>
+                <h2 class="section-title">Latest Updates</h2>
+                <div class="title-underline"></div>
             </div>
-            <div class="news-grid">
-                <div class="news-card featured">
-                    <div class="news-badge">Latest</div>
-                    <span class="news-date"><i class="far fa-calendar"></i> Recent 2026</span>
-                    <p class="news-content">Joined <strong class="highlight-orange">Orange Innovation</strong> as an AI Research Intern. SUCCESS!</p>
+            
+            <div class="news-timeline">
+                <div class="news-item featured-news">
+                    <div class="news-marker"></div>
+                    <div class="news-content">
+                        <span class="news-date">February 2026</span>
+                        <p class="news-text">Joined <strong>Orange Innovation</strong> as AI Research Engineer Intern</p>
+                        <span class="news-badge">Current</span>
+                    </div>
                 </div>
-                <div class="news-card">
-                    <span class="news-date"><i class="far fa-calendar"></i> Recent 2026</span>
-                    <p class="news-content">Participated in the Hackathon at AI Collective.</p>
+                
+                <div class="news-item">
+                    <div class="news-marker"></div>
+                    <div class="news-content">
+                        <span class="news-date">January 2026</span>
+                        <p class="news-text">Participated in AI Collective Hackathon</p>
+                    </div>
                 </div>
-                <div class="news-card">
-                    <span class="news-date"><i class="far fa-calendar"></i> 2025</span>
-                    <p class="news-content">Participated in the Mistral AI MCP Hackathon.</p>
+                
+                <div class="news-item">
+                    <div class="news-marker"></div>
+                    <div class="news-content">
+                        <span class="news-date">2025</span>
+                        <p class="news-text">Participated in Mistral AI MCP Hackathon</p>
+                    </div>
                 </div>
-                <div class="news-card">
-                    <span class="news-date"><i class="far fa-calendar"></i> 2025</span>
-                    <p class="news-content">Began M2 year of Masters.</p>
+                
+                <div class="news-item">
+                    <div class="news-marker"></div>
+                    <div class="news-content">
+                        <span class="news-date">2025</span>
+                        <p class="news-text">Commenced M2 year of Master's program</p>
+                    </div>
                 </div>
-                <div class="news-card">
-                    <span class="news-date"><i class="far fa-calendar"></i> 2024</span>
-                    <p class="news-content">Began M1 year of Masters.</p>
+                
+                <div class="news-item">
+                    <div class="news-marker"></div>
+                    <div class="news-content">
+                        <span class="news-date">2024</span>
+                        <p class="news-text">Enrolled at <strong>University of Paris-Saclay</strong></p>
+                    </div>
                 </div>
-                <div class="news-card">
-                    <span class="news-date"><i class="far fa-calendar"></i> 2024</span>
-                    <p class="news-content">Relocated to Paris, joined the <strong class="highlight-orange">University of Paris-Saclay</strong>.</p>
+                
+                <div class="news-item">
+                    <div class="news-marker"></div>
+                    <div class="news-content">
+                        <span class="news-date">2024</span>
+                        <p class="news-text">Graduated from Bahria University with Bachelor's degree</p>
+                    </div>
                 </div>
-                <div class="news-card">
-                    <span class="news-date"><i class="far fa-calendar"></i> 2024</span>
-                    <p class="news-content">Graduated from Bahria University.</p>
-                </div>
-                <div class="news-card">
-                    <span class="news-date"><i class="far fa-calendar"></i> 2023-2024</span>
-                    <p class="news-content">Successfully completed Bachelor's thesis.</p>
-                </div>
-                <div class="news-card">
-                    <span class="news-date"><i class="far fa-calendar"></i> 2023-2024</span>
-                    <p class="news-content">Bachelor's thesis awarded research funding (NGIRI).</p>
+                
+                <div class="news-item">
+                    <div class="news-marker"></div>
+                    <div class="news-content">
+                        <span class="news-date">2023-2024</span>
+                        <p class="news-text">Awarded NGIRI Research Funding for Bachelor's Thesis</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Education Section -->
-        <section id="education" class="section-animated">
+        <section class="content-section" id="education">
             <div class="section-header">
-                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-                <div class="section-line"></div>
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
             </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="item-header">
-                            <h3>Master in Machine Vision and Artificial Intelligence</h3>
-                            <span class="date">2024 - 2026</span>
+            
+            <div class="education-list">
+                <div class="education-card">
+                    <div class="edu-header">
+                        <div class="edu-icon">
+                            <i class="fas fa-graduation-cap"></i>
                         </div>
-                        <p class="institution"><i class="fas fa-university"></i> <strong class="highlight-orange">University of Paris-Saclay</strong></p>
+                        <div class="edu-details">
+                            <h3 class="edu-degree">Master of Science</h3>
+                            <p class="edu-field">Machine Vision and Artificial Intelligence</p>
+                            <p class="edu-institution"><strong>University of Paris-Saclay</strong></p>
+                        </div>
+                        <span class="edu-period">2024 - 2026</span>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="item-header">
-                            <h3>Bachelor of Engineering (EE)</h3>
-                            <span class="date">2020 - 2024</span>
+                
+                <div class="education-card">
+                    <div class="edu-header">
+                        <div class="edu-icon">
+                            <i class="fas fa-graduation-cap"></i>
                         </div>
-                        <p class="institution"><i class="fas fa-university"></i> <strong class="highlight-orange">Bahria University</strong></p>
+                        <div class="edu-details">
+                            <h3 class="edu-degree">Bachelor of Engineering</h3>
+                            <p class="edu-field">Electrical Engineering</p>
+                            <p class="edu-institution"><strong>Bahria University</strong></p>
+                        </div>
+                        <span class="edu-period">2020 - 2024</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Experience Section -->
-        <section id="experience" class="section-animated">
+        <section class="content-section" id="experience">
             <div class="section-header">
-                <h2><i class="fas fa-briefcase"></i> Research & Engineering Experience</h2>
-                <div class="section-line"></div>
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="title-underline"></div>
             </div>
             
-            <div class="experience-grid">
-                <div class="experience-card featured-exp">
+            <div class="experience-list">
+                <div class="exp-card current-position">
                     <div class="exp-header">
-                        <h3><i class="fas fa-flask"></i> AI Research Engineer (Intern)</h3>
-                        <span class="date">Feb 2026 - Present</span>
+                        <div>
+                            <h3 class="exp-title">AI Research Engineer (Intern)</h3>
+                            <p class="exp-company"><strong>Orange Innovation</strong></p>
+                        </div>
+                        <span class="exp-duration">Feb 2026 - Present</span>
                     </div>
-                    <p class="company"><strong class="highlight-orange">Orange Innovation</strong></p>
-                    <p>Modeling network data, complex topologies, and building performance-enhanced GNNs. Developing
-                        end-to-end ML pipelines for KPI extraction, custom training loops, and distributed training on
-                        clusters.</p>
+                    <p class="exp-description">
+                        Developing advanced Graph Neural Networks for network data modeling and complex topology analysis. 
+                        Building end-to-end ML pipelines for KPI extraction with custom training loops and distributed 
+                        training implementations on high-performance computing clusters.
+                    </p>
+                    <div class="exp-tags">
+                        <span class="tag">GNN</span>
+                        <span class="tag">MLOps</span>
+                        <span class="tag">Distributed Training</span>
+                    </div>
                 </div>
 
-                <div class="experience-card">
-                    <h3><i class="fas fa-video"></i> Multimodal Text-Guided Video Segment Search</h3>
-                    <p>Conducted a comprehensive study on state-of-the-art techniques for text-guided temporal video
-                        retrieval. Focused on retrieving specific moments based on natural language queries by studying
-                        uniform, adaptive, and dynamic sampling strategies.</p>
-                </div>
-
-                <div class="experience-card">
-                    <h3><i class="fas fa-cube"></i> 3-D Reconstruction of Scenes from Images</h3>
-                    <p>Analyzed state-of-the-art ML techniques for 3D reconstruction from 2D images, including NeRF, Instant
-                        NeRF, PixelNeRF, Gaussian Splatting, and Neuralangelo. Evaluated advancements in volume rendering,
-                        hash encoding, and Signed Distance Functions.</p>
-                </div>
-
-                <div class="experience-card">
-                    <h3><i class="fas fa-palette"></i> Style Transfer & GAN-Based Data Augmentation</h3>
-                    <p>Built custom CNNs to measure data augmentation impacts. Developed Conditional GANs (C-GANs) with
-                        progressive resolution growth to generate high-quality synthetic data, significantly improving CNN
-                        classifier performance. Implemented CycleGAN for unpaired image-to-image translation.</p>
-                </div>
-
-                <div class="experience-card">
-                    <h3><i class="fas fa-seedling"></i> AI-Based Plant Monitoring System <span class="badge-funded">Funded</span></h3>
-                    <p>Deployed 5 different CNN architectures (ResNet50, VGG16/19, MobileNet V1/V2) on a Raspberry Pi using
-                        TF Lite for real-time disease detection. Integrated the AI system onto the end-effector of a
-                        Cable-Driven Parallel Robot operated via Python joystick libraries.</p>
-                </div>
-
-                <div class="experience-card">
+                <div class="exp-card">
                     <div class="exp-header">
-                        <h3><i class="fas fa-cogs"></i> Engineering Intern</h3>
-                        <span class="date">Aug 2023 - Sept 2023</span>
+                        <div>
+                            <h3 class="exp-title">Research Project: Multimodal Video Retrieval</h3>
+                            <p class="exp-company">Academic Research</p>
+                        </div>
                     </div>
-                    <p class="company"><strong class="highlight-orange">Aquagen Pvt.Ltd</strong></p>
-                    <p>Designed PLC code for process automation, ensuring accurate feedback from sensors. Identified and
-                        resolved issues in the PLC system, and upgraded the HMI code for monitoring plant generation.</p>
+                    <p class="exp-description">
+                        Conducted comprehensive analysis of state-of-the-art text-guided temporal video retrieval techniques. 
+                        Investigated uniform, adaptive, and dynamic sampling strategies for natural language-based moment retrieval.
+                    </p>
+                    <div class="exp-tags">
+                        <span class="tag">VLM</span>
+                        <span class="tag">Video Understanding</span>
+                        <span class="tag">Retrieval Systems</span>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="exp-title">Research Project: 3D Scene Reconstruction</h3>
+                            <p class="exp-company">Academic Research</p>
+                        </div>
+                    </div>
+                    <p class="exp-description">
+                        Analyzed cutting-edge ML techniques for 3D reconstruction including NeRF, Instant NeRF, PixelNeRF, 
+                        Gaussian Splatting, and Neuralangelo. Evaluated volume rendering, hash encoding, and SDF methodologies.
+                    </p>
+                    <div class="exp-tags">
+                        <span class="tag">3D Vision</span>
+                        <span class="tag">NeRF</span>
+                        <span class="tag">Gaussian Splatting</span>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="exp-title">Research Project: GAN-Based Data Augmentation</h3>
+                            <p class="exp-company">Academic Research</p>
+                        </div>
+                    </div>
+                    <p class="exp-description">
+                        Developed Conditional GANs with progressive resolution growth for high-quality synthetic data generation. 
+                        Implemented CycleGAN for unpaired image-to-image translation, significantly improving CNN classifier performance.
+                    </p>
+                    <div class="exp-tags">
+                        <span class="tag">GANs</span>
+                        <span class="tag">Data Augmentation</span>
+                        <span class="tag">Style Transfer</span>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="exp-title">AI-Based Plant Monitoring System</h3>
+                            <p class="exp-company">Funded Research Project (NGIRI)</p>
+                        </div>
+                        <span class="exp-duration">2023 - 2024</span>
+                    </div>
+                    <p class="exp-description">
+                        Deployed multiple CNN architectures (ResNet50, VGG16/19, MobileNet V1/V2) on Raspberry Pi using 
+                        TensorFlow Lite for real-time disease detection. Integrated AI system with Cable-Driven Parallel Robot.
+                    </p>
+                    <div class="exp-tags">
+                        <span class="tag">Edge AI</span>
+                        <span class="tag">CNN</span>
+                        <span class="tag">Robotics</span>
+                        <span class="tag">TF Lite</span>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="exp-title">Engineering Intern</h3>
+                            <p class="exp-company"><strong>Aquagen Pvt. Ltd</strong></p>
+                        </div>
+                        <span class="exp-duration">Aug 2023 - Sept 2023</span>
+                    </div>
+                    <p class="exp-description">                        Designed and implemented PLC automation systems with sensor feedback integration. 
+                        Troubleshot PLC system issues and upgraded HMI interfaces for plant monitoring and control.
+                    </p>
+                    <div class="exp-tags">
+                        <span class="tag">PLC Programming</span>
+                        <span class="tag">HMI</span>
+                        <span class="tag">Process Automation</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="section-animated">
+        <section class="content-section" id="projects">
             <div class="section-header">
-                <h2><i class="fas fa-code"></i> Technical Projects</h2>
-                <div class="section-line"></div>
+                <h2 class="section-title">Technical Projects</h2>
+                <div class="title-underline"></div>
             </div>
+            
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-brain"></i></div>
-                    <h4>Transformer & ViT from Scratch</h4>
-                    <p>Implemented the original Transformer and Vision Transformer paper from scratch using PyTorch.</p>
+                <div class="project-item">
+                    <div class="project-number">01</div>
+                    <h4 class="project-name">Transformer & Vision Transformer Implementation</h4>
+                    <p class="project-desc">Complete PyTorch implementation of original Transformer and ViT architectures from research papers</p>
                 </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-robot"></i></div>
-                    <h4>Mistral-7B Fine-tuning</h4>
-                    <p>Fine-tuned (Instruction-based) Mistral-7B using Q-LoRA on the Stanford Alpaca Dataset.</p>
+                
+                <div class="project-item">
+                    <div class="project-number">02</div>
+                    <h4 class="project-name">Mistral-7B Fine-tuning with Q-LoRA</h4>
+                    <p class="project-desc">Instruction-based fine-tuning of Mistral-7B using Q-LoRA on Stanford Alpaca Dataset</p>
                 </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-eye"></i></div>
-                    <h4>Multimodal VLM (PaliGemma)</h4>
-                    <p>Built a Multimodal Vision Language Model from scratch (PaliGemma).</p>
+                
+                <div class="project-item">
+                    <div class="project-number">03</div>
+                    <h4 class="project-name">PaliGemma Vision-Language Model</h4>
+                    <p class="project-desc">Built multimodal VLM from scratch implementing state-of-the-art architecture</p>
                 </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-calculator"></i></div>
-                    <h4>RL-based Small Language Model</h4>
-                    <p>Developed a Small Language Model using Reinforcement Learning for Arithmetic Operations.</p>
+                
+                <div class="project-item">
+                    <div class="project-number">04</div>
+                    <h4 class="project-name">RL-based Small Language Model</h4>
+                    <p class="project-desc">Developed SLM using Reinforcement Learning for arithmetic operations and reasoning</p>
                 </div>
-                <div class="project-card">
-                                        <div class="project-icon"><i class="fas fa-layer-group"></i></div>
-                    <h4>LLaMA-2 Implementation</h4>
-                    <p>Implemented LLaMA-2 from scratch using PyTorch.</p>
+                
+                <div class="project-item">
+                    <div class="project-number">05</div>
+                    <h4 class="project-name">LLaMA-2 from Scratch</h4>
+                    <p class="project-desc">Complete PyTorch implementation of LLaMA-2 architecture and training pipeline</p>
                 </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-images"></i></div>
-                    <h4>CLIP in JAX/Flax</h4>
-                    <p>Implemented CLIP from scratch in JAX/Flax.</p>
+                
+                <div class="project-item">
+                    <div class="project-number">06</div>
+                    <h4 class="project-name">CLIP in JAX/Flax</h4>
+                    <p class="project-desc">Implemented CLIP architecture from scratch using JAX and Flax frameworks</p>
                 </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-align-center"></i></div>
-                    <h4>LLM Alignment (PPO/DPO)</h4>
-                    <p>Performed LLM alignment using PPO/DPO techniques.</p>
+                
+                <div class="project-item">
+                    <div class="project-number">07</div>
+                    <h4 class="project-name">LLM Alignment (PPO/DPO)</h4>
+                    <p class="project-desc">Performed language model alignment using Proximal Policy Optimization and Direct Preference Optimization</p>
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="section-animated">
+        <section class="content-section" id="skills">
             <div class="section-header">
-                <h2><i class="fas fa-tools"></i> Technical Skills</h2>
-                <div class="section-line"></div>
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="title-underline"></div>
             </div>
+            
             <div class="skills-container">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming & Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">JAX</span>
-                        <span class="skill-tag">Flax</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">PyGAD</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">Verilog</span>
-                        <span class="skill-tag">VHDL</span>
-                        <span class="skill-tag">Huggingface</span>
-                        <span class="skill-tag">LLM APIs</span>
-                        <span class="skill-tag">Matplotlib</span>
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">Pillow</span>
-                        <span class="skill-tag">Git/GitHub</span>
+                <div class="skill-group">
+                    <h3 class="skill-category-title">Programming Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">C</span>
+                        <span class="skill-item">Verilog</span>
+                        <span class="skill-item">VHDL</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-language"></i> Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag lang">English (Fluent)</span>
-                        <span class="skill-tag lang">French (Actively Learning)</span>
+                
+                <div class="skill-group">
+                    <h3 class="skill-category-title">ML/DL Frameworks</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">PyTorch</span>
+                        <span class="skill-item">JAX</span>
+                        <span class="skill-item">Flax</span>
+                        <span class="skill-item">TensorFlow</span>
+                        <span class="skill-item">Hugging Face</span>
+                        <span class="skill-item">PyGAD</span>
+                    </div>
+                </div>
+                
+                <div class="skill-group">
+                    <h3 class="skill-category-title">Computer Vision & Data</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">OpenCV</span>
+                        <span class="skill-item">Pillow</span>
+                        <span class="skill-item">Matplotlib</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">Pandas</span>
+                    </div>
+                </div>
+                
+                <div class="skill-group">
+                    <h3 class="skill-category-title">Tools & Technologies</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Git/GitHub</span>
+                        <span class="skill-item">LLM APIs</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Linux</span>
+                        <span class="skill-item">Jupyter</span>
+                    </div>
+                </div>
+                
+                <div class="skill-group">
+                    <h3 class="skill-category-title">Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-item professional">English (Fluent)</span>
+                        <span class="skill-item learning">French (Intermediate)</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Achievements Section -->
-        <section id="achievements" class="section-animated">
+        <section class="content-section" id="achievements">
             <div class="section-header">
-                <h2><i class="fas fa-trophy"></i> Hackathons, Honours & Awards</h2>
-                <div class="section-line"></div>
+                <h2 class="section-title">Achievements & Recognition</h2>
+                <div class="title-underline"></div>
             </div>
             
             <div class="achievements-grid">
-                <div class="achievement-card hackathon">
-                    <div class="achievement-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Mistral AI MCP Hackathon</h3>
-                    <span class="achievement-date">2025</span>
-                    <p>Integrated Facebook with LeChat to manage account actions and extract insights directly on the LeChat
-                        interface using Alpic.</p>
+                <div class="achievement-item">
+                    <div class="achievement-icon hackathon-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4 class="achievement-title">Mistral AI MCP Hackathon</h4>
+                    <p class="achievement-year">2025</p>
+                    <p class="achievement-desc">Developed Facebook-LeChat integration using Alpic for account management and insights extraction</p>
                 </div>
-
-                <div class="achievement-card hackathon">
-                    <div class="achievement-icon"><i class="fas fa-microphone"></i></div>
-                    <h3>Activate Your Voice Hackathon</h3>
-                    <span class="achievement-date">2026</span>
-                    <p>Created a memory-persistent conversational AI agent to automate various tasks.</p>
+                
+                <div class="achievement-item">
+                    <div class="achievement-icon hackathon-icon">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <h4 class="achievement-title">Activate Your Voice Hackathon</h4>
+                    <p class="achievement-year">2026</p>
+                    <p class="achievement-desc">Created memory-persistent conversational AI agent for task automation</p>
                 </div>
-
-                <div class="achievement-card award">
-                    <div class="achievement-icon"><i class="fas fa-award"></i></div>
-                    <h3>National Grassroots Research Initiative Fund</h3>
-                    <span class="achievement-date">2023-2024</span>
-                    <p>Awarded NGIRI Fund for Bachelor's Thesis.</p>
+                
+                <div class="achievement-item">
+                    <div class="achievement-icon award-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4 class="achievement-title">NGIRI Research Fund</h4>
+                    <p class="achievement-year">2023-2024</p>
+                    <p class="achievement-desc">National Grassroots Research Initiative funding for Bachelor's Thesis project</p>
                 </div>
-
-                <div class="achievement-card award">
-                    <div class="achievement-icon"><i class="fas fa-laptop"></i></div>
-                    <h3>Government of Pakistan</h3>
-                    <span class="achievement-date">2023</span>
-                    <p>Awarded a Laptop from PMYLS.</p>
+                
+                <div class="achievement-item">
+                    <div class="achievement-icon award-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h4 class="achievement-title">PMYLS Scholarship</h4>
+                    <p class="achievement-year">2023</p>
+                    <p class="achievement-desc">Government of Pakistan laptop award for academic excellence</p>
                 </div>
             </div>
         </section>
 
-        <!-- Recommendations Section -->
-        <section id="recommendations" class="section-animated">
+        <!-- Contact/Recommendations Section -->
+        <section class="content-section" id="contact">
             <div class="section-header">
-                <h2><i class="fas fa-star"></i> Recommendations</h2>
-                <div class="section-line"></div>
+                <h2 class="section-title">Professional References</h2>
+                <div class="title-underline"></div>
             </div>
-            <div class="recommendations-grid">
-                <div class="recommendation-card">
-                    <div class="rec-header">
-                        <div class="rec-avatar">KM</div>
-                        <div class="rec-info">
-                            <h4>Miss Kahina Mokrani</h4>
-                            <p class="rec-title">Supervisor at Orange Innovation</p>
+            
+            <div class="references-grid">
+                <div class="reference-card">
+                    <div class="reference-header">
+                        <div class="reference-avatar">KM</div>
+                        <div class="reference-info">
+                            <h4 class="reference-name">Kahina Mokrani</h4>
+                            <p class="reference-position">Research Supervisor</p>
+                            <p class="reference-org">Orange Innovation</p>
                         </div>
                     </div>
-                    <div class="rec-contact">
+                    <div class="reference-contact">
                         <i class="fas fa-envelope"></i>
                         <a href="mailto:kahina.mokrani@orange.com">kahina.mokrani@orange.com</a>
                     </div>
                 </div>
-
-                <div class="recommendation-card">
-                    <div class="rec-header">
-                        <div class="rec-avatar">HT</div>
-                        <div class="rec-info">
-                            <h4>Dr. Hedia Tabia</h4>
-                            <p class="rec-title">Supervisor in Masters | University of Paris-Saclay</p>
+                
+                <div class="reference-card">
+                    <div class="reference-header">
+                        <div class="reference-avatar">HT</div>
+                        <div class="reference-info">
+                            <h4 class="reference-name">Dr. Hedia Tabia</h4>
+                            <p class="reference-position">Academic Supervisor</p>
+                            <p class="reference-org">University of Paris-Saclay</p>
                         </div>
                     </div>
-                    <div class="rec-contact">
+                    <div class="reference-contact">
                         <i class="fas fa-envelope"></i>
                         <a href="mailto:hedi.tabia@univ-evry.fr">hedi.tabia@univ-evry.fr</a>
                     </div>
                 </div>
-
-                <div class="recommendation-card">
-                    <div class="rec-header">
-                        <div class="rec-avatar">AK</div>
-                        <div class="rec-info">
-                            <h4>Dr. Abdul Attayyab Khan</h4>
-                            <p class="rec-title">Supervisor in Bachelors | Bahria University</p>
+                
+                <div class="reference-card">
+                    <div class="reference-header">
+                        <div class="reference-avatar">AK</div>
+                        <div class="reference-info">
+                            <h4 class="reference-name">Dr. Abdul Attayyab Khan</h4>
+                            <p class="reference-position">Bachelor's Thesis Supervisor</p>
+                            <p class="reference-org">Bahria University</p>
                         </div>
                     </div>
-                    <div class="rec-contact">
+                    <div class="reference-contact">
                         <i class="fas fa-envelope"></i>
                         <a href="mailto:AAKHAN.BUKC@bahria.edu.pk">AAKHAN.BUKC@bahria.edu.pk</a>
                     </div>
@@ -425,18 +558,18 @@
 
     </main>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
+    <!-- Back to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Abdul Basit. Crafted with <i class="fas fa-heart"></i> and AI.</p>
-            <div class="footer-links">
-                <a href="https://github.com/abdul-basit-ai" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/abdul-basit-742a32221/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/basit_view?s=21" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p class="footer-text">&copy; <span id="currentYear">2026</span> Abdul Basit. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/abdul-basit-ai" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abdul-basit-742a32221/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/basit_view?s=21" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
             </div>
         </div>
     </footer>
@@ -446,4 +579,3 @@
 
 </html>
 
-                        
