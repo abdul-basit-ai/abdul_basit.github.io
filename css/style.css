@@ -36,7 +36,7 @@ body {
 }
 
 .profile-pic {
-    width: 180px;
+    width: 250px;
     border-radius: 8px; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
 }
@@ -132,7 +132,7 @@ h2 {
 }
 
 .news-container {
-    height: 120px; 
+    height: 100px; 
     flex: 1; /* Tells the box to take up all the remaining space on the right */
     overflow-y: scroll; 
     border: 1px solid var(--border-color);
@@ -275,3 +275,4 @@ footer {
         width: 100%;
     }
 }
+
