@@ -1,3 +1,8 @@
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Modern Root Variables */
 :root {
     --bg-color: #fefefe;
@@ -36,7 +41,7 @@ body {
 }
 
 .profile-pic {
-    width: 250px;
+    width: 230px; /* Adjusted to 230px for a better match */
     border-radius: 8px; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
 }
@@ -103,6 +108,33 @@ a:hover {
     margin: 30px 0;
 }
 
+/* Quick Navigation Menu */
+.page-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 35px;
+    justify-content: center;
+}
+
+.page-nav a {
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease;
+}
+
+.page-nav a:hover {
+    color: var(--mehrron-color);
+    border-color: var(--mehrron-color);
+    background-color: #fffafb;
+    text-decoration: none;
+}
+
 /* Section Headings */
 h2 {
     font-size: 1.5rem;
@@ -114,11 +146,11 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* --- NEW SIDE-BY-SIDE NEWS SECTION --- */
+/* SIDE-BY-SIDE NEWS SECTION */
 #news {
     display: flex;
     align-items: flex-start;
-    gap: 30px; /* Space between the heading and the box */
+    gap: 30px; 
     margin-top: 35px;
     margin-bottom: 35px;
 }
@@ -126,20 +158,20 @@ h2 {
 #news h2 {
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 12px; /* Pushes text down to align nicely with box contents */
-    border-bottom: none; /* Removes the underline when side-by-side */
-    white-space: nowrap; /* Keeps 'Latest News' on one line */
+    padding-top: 12px; 
+    border-bottom: none; 
+    white-space: nowrap; 
 }
 
 .news-container {
-    height: 100px; 
-    flex: 1; /* Tells the box to take up all the remaining space on the right */
+    height: 100px; /* Perfected height for exactly 2 items */
+    flex: 1; 
     overflow-y: scroll; 
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 15px;
     background: #fff;
-    margin: 0; /* Removes default margins so it sits perfectly next to the title */
+    margin: 0; 
     box-sizing: border-box;
 }
 
@@ -241,7 +273,7 @@ footer {
     }
     
     .profile-pic {
-        width: 150px;
+        width: 150px; /* Ensures image isn't too huge on phones */
         margin-bottom: 15px;
     }
 
@@ -275,4 +307,3 @@ footer {
         width: 100%;
     }
 }
-
