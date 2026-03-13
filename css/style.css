@@ -32,19 +32,19 @@ body {
     padding: 0 20px;
 }
 
-/* --- NEW: Top Navigation Menu --- */
+/* --- Top Navigation Menu --- */
 .top-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px; /* Spacing between links */
-    margin-bottom: 50px; /* Big gap before profile */
+    gap: 25px; 
+    margin-bottom: 50px; 
     justify-content: center;
-    border-bottom: 1px solid var(--divider-color); /* Faint line spanning the top */
+    border-bottom: 1px solid var(--divider-color); 
     padding-bottom: 15px;
 }
 
 .top-nav a {
-    color: #6a737d; /* Academic muted gray */
+    color: #6a737d; 
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-size: 0.95rem;
@@ -53,7 +53,7 @@ body {
 }
 
 .top-nav a:hover, .top-nav a.active {
-    color: var(--academic-blue); /* Highlights in blue */
+    color: var(--academic-blue); 
 }
 
 /* Profile Header Section with Picture */
@@ -161,7 +161,7 @@ h2 {
 }
 
 .news-container {
-    height: 100px; /* Perfected height for exactly 2 items */
+    height: 100px; 
     flex: 1; 
     overflow-y: scroll; 
     border: 1px solid var(--border-color);
@@ -263,31 +263,50 @@ footer {
 
 /* Mobile and Small Screen Responsiveness */
 @media (max-width: 650px) {
+    /* 1. Fix the Top Navigation for Mobile */
+    .top-nav {
+        gap: 10px; 
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+    }
+
+    .top-nav a {
+        font-size: 0.85rem; 
+    }
+
+    /* 2. Fix the Profile Section */
     .profile-section {
         flex-direction: column; 
         align-items: center;
-        text-align: left; 
+        text-align: center; 
     }
     
     .profile-pic {
         width: 150px; 
-        margin-bottom: 15px;
+        margin-bottom: 5px;
+    }
+
+    .profile-info h1 {
+        font-size: 1.7rem; 
     }
 
     .container {
-        margin: 20px auto;
+        margin: 15px auto;
         padding: 0 15px;
     }
 
+    /* 3. Fix the Lists and Dates */
     .item-header {
         flex-direction: column; 
         align-items: flex-start;
     }
     
     .date {
-        margin-top: 0px;
+        margin-top: 2px;
+        margin-bottom: 8px;
     }
     
+    /* 4. Fix the News Section for Mobile */
     #news {
         flex-direction: column; 
         gap: 15px;
@@ -301,5 +320,9 @@ footer {
     
     .news-container {
         width: 100%;
+        height: 150px; 
+        max-height: 150px; /* STRICT HEIGHT LIMIT */
+        overflow-y: scroll; /* FORCE SCROLL */
+        box-sizing: border-box;
     }
 }
