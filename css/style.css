@@ -1,10 +1,10 @@
 /* Modern Root Variables */
 :root {
-    --bg-color: #fefefe; /* Very light gray to distinguish from pure white */
+    --bg-color: #fefefe;
     --text-color: #242424;
     --heading-color: #1a1a1a;
-    --mehrron-color: #800000; /* Deep Maroon for organisations */
-    --academic-blue: #0366d6; /* Modern Blue for links */
+    --mehrron-color: #800000; 
+    --academic-blue: #0366d6; 
     --divider-color: #eaecef;
     --border-color: #d1d5da;
 }
@@ -22,7 +22,7 @@ body {
 
 /* Page Container Constraints and Spacing */
 .container {
-    max-width: 800px; /* Keeps lines of text optimal for reading */
+    max-width: 800px; 
     margin: 40px auto;
     padding: 0 20px;
 }
@@ -30,19 +30,19 @@ body {
 /* Profile Header Section with Picture */
 .profile-section {
     display: flex;
-    align-items: center; /* V-align image and text centrally */
+    align-items: center; 
     gap: 30px;
     margin-bottom: 20px;
 }
 
 .profile-pic {
     width: 180px;
-    border-radius: 8px; /* Classic slight rounded corner, not a full circle */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtile Premium shadow */
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
 }
 
 .profile-info {
-    flex: 1; /* Allow content to grow and use available space */
+    flex: 1; 
 }
 
 .profile-info h1 {
@@ -77,7 +77,7 @@ a:hover {
 
 .social-links {
     margin-top: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Cleaner for small links */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
     font-size: 0.95rem;
 }
 
@@ -95,20 +95,52 @@ a:hover {
     color: var(--mehrron-color);
 }
 
-/* News Section Styling */
+/* Divider Line */
+.divider {
+    border: 0;
+    height: 1px;
+    background: var(--divider-color);
+    margin: 30px 0;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--heading-color);
+    border-bottom: 1px solid var(--divider-color);
+    padding-bottom: 8px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+/* --- NEW SIDE-BY-SIDE NEWS SECTION --- */
+#news {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px; /* Space between the heading and the box */
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
 #news h2 {
-    margin-top: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 12px; /* Pushes text down to align nicely with box contents */
+    border-bottom: none; /* Removes the underline when side-by-side */
+    white-space: nowrap; /* Keeps 'Latest News' on one line */
 }
 
 .news-container {
-    height: 70px; /* Reduced height to make it smaller and only show ~2 items */
+    height: 120px; 
+    flex: 1; /* Tells the box to take up all the remaining space on the right */
     overflow-y: scroll; 
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 15px;
     background: #fff;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin: 0; /* Removes default margins so it sits perfectly next to the title */
+    box-sizing: border-box;
 }
 
 /* Stylized Inner Scrollbar */
@@ -130,43 +162,29 @@ a:hover {
 }
 
 .news-item {
-    padding: 10px 0;
+    padding: 8px 0;
     border-bottom: 1px solid #f1f1f1;
+}
+
+.news-item:first-child {
+    padding-top: 0;
 }
 
 .news-item:last-child {
     border-bottom: none;
+    padding-bottom: 0;
 }
 
 .news-date {
     font-weight: 600;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Monospace date feel */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 0.9rem;
     color: #555;
-    white-space: nowrap; /* Date never wraps */
+    white-space: nowrap; 
 }
 
 .news-content {
     padding-left: 5px;
-}
-
-/* Divider Line */
-.divider {
-    border: 0;
-    height: 1px;
-    background: var(--divider-color);
-    margin: 30px 0;
-}
-
-/* Section Headings with Unterline and Padding */
-h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--heading-color);
-    border-bottom: 1px solid #eaecef;
-    padding-bottom: 8px;
-    margin-top: 35px;
-    margin-bottom: 20px;
 }
 
 /* Generic Item Formatting */
@@ -177,7 +195,7 @@ h2 {
 .item-header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline; /* Key academic alignment rule */
+    align-items: baseline; 
     margin-bottom: 2px;
 }
 
@@ -192,7 +210,7 @@ h2 {
     font-size: 0.95rem;
     color: #6a737d;
     font-style: italic;
-    white-space: nowrap; /* Date stays together */
+    white-space: nowrap; 
 }
 
 /* Lists and LI spacing */
@@ -217,9 +235,9 @@ footer {
 /* Mobile and Small Screen Responsiveness */
 @media (max-width: 650px) {
     .profile-section {
-        flex-direction: column; /* Stack image and text */
+        flex-direction: column; 
         align-items: center;
-        text-align: left; /* Keep bio text aligned left for reading */
+        text-align: left; 
     }
     
     .profile-pic {
@@ -233,18 +251,27 @@ footer {
     }
 
     .item-header {
-        flex-direction: column; /* Stack name and date */
-        align-items: left;
+        flex-direction: column; 
+        align-items: flex-start;
     }
     
     .date {
         margin-top: 0px;
     }
     
+    /* Safely stack News Section back to normal on small phone screens */
+    #news {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    
+    #news h2 {
+        border-bottom: 1px solid var(--divider-color);
+        width: 100%;
+        padding-bottom: 8px;
+    }
+    
     .news-container {
-        height: 200px; /* Reduced for mobile central display */
+        width: 100%;
     }
 }
-
-
-
