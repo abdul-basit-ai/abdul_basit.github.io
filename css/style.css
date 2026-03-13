@@ -101,7 +101,7 @@ a:hover {
 }
 
 .news-container {
-    height: 130px; /* Reduced height to make it smaller and only show ~2 items */
+    height: 100px; /* Reduced height to make it smaller and only show ~2 items */
     overflow-y: scroll; 
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -245,4 +245,5 @@ footer {
         height: 200px; /* Reduced for mobile central display */
     }
 }
+
 
